@@ -5,33 +5,34 @@
 
 /* Style the element with the id "myHeader" */
 #myHeader {
-  background-color: white;
-  color: red;
+  background-color: pink;
+  color: white;
   padding: 55px;
   text-align: center;
 }
 
 /* Styling the element with the class name "classes-check" */
 .headings-class {
-            background-color: purple;
+            background-color: white;
             color: pink;
             margin: 20px;
+            font-family:verdana;
+            font-size:200%;
             padding: 20px;
+            text-align:center;
           }
 
-p {
+p, a{
     color:white;
     font-family:courier;
     font-size:110%;
     text-align:center;
 }
 
-h1, h2, h3, h4{
+th {
     color:pink;
-    font-family:verdana;
-    font-size:200%;
-    text-align:center;
 }
+
 </style>
 
     <tagname style="property:value;">
@@ -53,14 +54,13 @@ h1, h2, h3, h4{
         displayed in a web browser. </p>
         <p> <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/HTML_source_code_example.svg">
         </p>
- <a style="color:whitesmoke; font-family:courier; font-size:110%; text-align:center;"
- href="https://www.w3schools.com"> <b> To learn HTML, click this link </b> </a>
+ <a href="https://www.w3schools.com"> <b> To learn HTML, click this link </b> </a>
 
 <!-- Putting in frame to show the link-->
 
  <iframe height="300px" width="100%" src="demo_iframe.htm" name="iframe_a"></iframe>
     <p>
-        <ahref="https://www.w3schools.com/html/html_basic.asp" target="iframe_a">W3Schools.com</a></p>
+        <a href="https://www.w3schools.com/html/html_basic.asp" target="iframe_a"> W3Schools.com</a></p>
 
  <tagname style="property:value;">
         <h3 class="headings-class";>
@@ -70,12 +70,12 @@ h1, h2, h3, h4{
            <table style="width:100%; color: white; font-family:verdana; font-size:200%;">
                
                    <tr>
-                     <th style="color:pink;" >
+                     <th >
                          Browser Support</th>
-                    <th style="color:pink;" >
-                            Offline Support</th>
-                    <th style="color:pink;" >
-                                Geolocation</th>
+                    <th>
+                         Offline Support</th>
+                    <th>
+                        Geolocation</th>
                    </tr>
                    <tr>
                      <td>Offline Application Cache</td>
@@ -96,9 +96,6 @@ h1, h2, h3, h4{
                    <li>XHTML</li>
                    <li>HTML</li>
                  </ul> 
-<!--  Using the save document feature & added a symbol-->
-    <p style="color:pink; font-size:200%;">  Save the document by pressing 
-         <kbd>Ctrl + S</kbd> &#169; </p>
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/UB1O30fR-EE"
             frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
@@ -108,8 +105,14 @@ h1, h2, h3, h4{
                     <a href="https://www.youtube.com/embed/UB1O30fR-EE" target="_blank">
                         HTML Guide for Beginners</a>.
                     </p>
+    <!--  Using the save document feature & added a symbol-->
+    <p>  Save the document by pressing 
+            <kbd>Ctrl + S</kbd> &#169; </p>
 
 <button>Next Page</button>
+
+
+
 
 </body>
 </html>
