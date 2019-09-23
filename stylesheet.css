@@ -1,0 +1,33 @@
+
+/* Top-level header style */
+#top-level-header {
+    background-color: grey;
+    margin-top: -1px;
+    margin-bottom: 10px;
+    margin-right: 250px;
+    margin-left: 350px;
+    width: 40%;
+    text-align: center;
+    padding: 1px; 
+    position: fixed;
+    left: 10px;
+    right: 20px;
+    font-size: 50px;
+    font-family:verdana;
+    line-height: 1.6;
+  }
+/* Left Margin style */
+.left-margin{
+    padding: 50px 5px 15px 5px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 820px;
+    margin-left: 110px;
+    background-color: lightgrey;
+    color:black;
+    font-family:Georgia;
+    font-size:100%;
+}
+
+
+
