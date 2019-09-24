@@ -1,33 +1,168 @@
-
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia;
+    color:black;
+    height: 50px;
+}
 /* Top-level header style */
 #top-level-header {
-    background-color: grey;
-    margin-top: -1px;
-    margin-bottom: 10px;
-    margin-right: 250px;
-    margin-left: 350px;
-    width: 40%;
-    text-align: center;
-    padding: 1px; 
-    position: fixed;
-    left: 10px;
-    right: 20px;
-    font-size: 50px;
-    font-family:verdana;
-    line-height: 1.6;
+    float:middle;
+    margin-left: 40px;
+    margin-right: 50px;
+	padding-bottom: 10px;
+	font-size: 50px;
+    color:#302e2e;
+    text-align:center;
   }
-/* Left Margin style */
-.left-margin{
-    padding: 50px 5px 15px 5px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 820px;
-    margin-left: 110px;
-    background-color: lightgrey;
-    color:black;
-    font-family:Georgia;
-    font-size:100%;
+/* format the right-margin. */
+.right-margin{
+    float:right;
+    margin-top: -20px;
+    margin-right: 50px;
+    margin-left: 10px;
+	padding-bottom: 1px;
+	font-size: 16px;
 }
+
+/* Will create 2 unequal columns that will also float*/
+.columns-content{
+    float:left;
+    width: 25%;
+    margin-right: -150px;
+    margin-left: -50px;
+}
+/* format the headings. */
+.main-headings-content{
+    float:left;
+    width:65%;
+    padding: 20px;
+    margin-top: 90px;
+
+}
+/* It will clear floats after the columns */ 
+.screen-division:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* format the boxes sides of the list */
+  .screen-division ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 10px;
+  }
+/* format the placement of the list */
+  .screen-divison li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #9c9e9e;
+    color: #ffffff;
+    margin-right: 1300px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    width: 40%;
+  }
+  /* It will highlight the box where the cursor will be */
+  .screen-divison li:hover {
+    background-color:rgb(10, 10, 10);
+  }
+  /* sets the left margin of the page. */ 
+  .left-margin{
+    float:left;
+    margin-right: -100px;
+    margin-left: 50px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+/* Formats the headings of the column. */ 
+ .columns-content h1, h2{
+    margin-top: 80px;
+    margin-bottom: 20px;
+    text-align: left;
+    height: 10px;
+    width: 50%;
+    margin-left: 40px;
+    margin-right: -10px;
+    font-size: 20px;
+}
+/* Formats the heading 2 of the column. */ 
+.columns-content h2{
+    margin-top: 10px;
+    width: 60%;
+}
+/* creates the outline of the. */ 
+.main-headings-content h1{
+    border: 1px solid black;
+    background-color: rgb(168, 164, 164); 
+}
+/* Move the date and year to the right side for education class */ 
+.education span{
+padding-left: 430px;
+}
+.education span1{
+    padding-left: 350px;
+}
+.rewards span{
+    padding-left: 500px;
+}
+.rewards span1{
+    padding-left: 465px;
+}
+.rewards span2{
+    padding-left: 635px;
+}
+.experience span{
+    padding-left: 30%;
+    
+}
+/* Change the bullets style to squares and indentation for experience class*/ 
+.experience ul1 li{
+list-style: square;
+padding: 0.5%;
+margin-left: 50px;
+}
+
+/* Change the bullets style to squares and indentation for relevant-courses  class*/ 
+.relevant-coursework ul li{
+    list-style: square;
+    padding: 0.5%;
+}
+img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 300px;
+    margin-left: 250px;
+    margin-right: 250px;   
+  }
+  
+  img:hover {
+    box-shadow: 10 10 20px 20px red;
+    width: 600px;
+  } 
+
+/* Responsive layout - it will make the two unequal columns stack
+on top of eachother when the screen is becoming smaller instead of
+next to each other */
+
+@media screen and (max-width: 800px) {
+    .columns-content, .main-headings {   
+      width: 100%;
+      padding: 0;
+    }
+
+
+
+
+
+  
+
+
+
+
+
 
 
 
