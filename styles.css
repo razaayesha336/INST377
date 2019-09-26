@@ -8,7 +8,7 @@ body{
     height: 50px;
 }
 /* Top-level header style */
-#top-level-header {
+#top__level--header {
     float:middle;
     margin-left: 40px;
     margin-right: 50px;
@@ -16,7 +16,7 @@ body{
   background-color: black;
     color: #ffffff;
     text-align:center;
-  }
+  } 
   /* Creats a hroizontal line */
   hr{
     border: 5;
@@ -67,7 +67,7 @@ body{
 }
 /* format the placement of the list */
 .screen-divison li {
-  word-wrap: break-word;
+  overflow-wrap: break-word;
   padding: 10px;
   margin-bottom: 10px;
   background-color: #9c9e9e;
