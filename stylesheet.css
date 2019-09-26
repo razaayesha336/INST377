@@ -2,19 +2,30 @@
     box-sizing: border-box;
 }
 body{
+    background-color: #f1f3f3;
     font-family: Georgia;
     color:black;
     height: 50px;
+    
+
 }
 /* Top-level header style */
 #top-level-header {
     float:middle;
     margin-left: 40px;
     margin-right: 50px;
-	padding-bottom: 10px;
-	font-size: 50px;
-    color:#302e2e;
+  font-size: 50px;
+  background-color: black;
+    color: #ffffff;
     text-align:center;
+  }
+  hr{
+    border: 5;
+    width: 100%;
+    height: 10px;
+    background-color: grey;
+
+
   }
 /* format the right-margin. */
 .right-margin{
@@ -36,7 +47,7 @@ body{
 /* format the headings. */
 .main-headings-content{
     float:left;
-    width:65%;
+    width:60%;
     padding: 20px;
     margin-top: 90px;
 
@@ -45,7 +56,7 @@ body{
 .screen-division:after{
     content: "";
     display: table;
-    clear: both;
+    clear: both;  
 }
 /* format the boxes sides of the list */
   .screen-division ul {
@@ -60,9 +71,10 @@ body{
     background-color: #9c9e9e;
     color: #ffffff;
     margin-right: 1300px;
-    margin-left: 20px;
+    margin-left: 15px;
     padding-bottom: 10px;
-    width: 40%;
+    width: 30%;
+    display:flex;
   }
   /* It will highlight the box where the cursor will be */
   .screen-divison li:hover {
@@ -72,7 +84,7 @@ body{
   .left-margin{
     float:left;
     margin-right: -100px;
-    margin-left: 50px;
+    margin-left: 40px;
     padding-bottom: 10px;
     font-size: 16px;
 }
@@ -94,61 +106,67 @@ body{
 }
 /* creates the outline of the. */ 
 .main-headings-content h1{
-    border: 1px solid black;
-    background-color: rgb(168, 164, 164); 
+    display:flex;
+    border: 2px solid black;
+    background-color: rgb(168, 164, 164);
 }
-/* Move the date and year to the right side for education class */ 
-.education span{
-padding-left: 430px;
+/* Put the space between two */
+.degree {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
 }
-.education span1{
-    padding-left: 350px;
+/* Put the space between two */
+.reward{
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
 }
-.rewards span{
-    padding-left: 500px;
-}
-.rewards span1{
-    padding-left: 465px;
-}
-.rewards span2{
-    padding-left: 635px;
-}
-.experience span{
-    padding-left: 30%;
-    
+/* Put the space between two */
+.job-title { 
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
 }
 /* Change the bullets style to squares and indentation for experience class*/ 
-.experience ul1 li{
+.experience ul li{
 list-style: square;
 padding: 0.5%;
 margin-left: 50px;
+justify-content: space-between;
 }
-
-/* Change the bullets style to squares and indentation for relevant-courses  class*/ 
+/* Will make sure it flex and its bold*/
+.relevant-coursework{
+    font-weight: bold;
+}
+/* Change the bullets style to squares and indentation for relevant-courses class*/ 
 .relevant-coursework ul li{
-    list-style: square;
-    padding: 0.5%;
+  list-style: square;
+  padding: 0.5%;
+  margin-left: 50px;
+  justify-content: space-between;
+  font-weight: normal;
 }
+/* Change the size and placement of the image*/
 img{
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
     width: 300px;
-    margin-left: 250px;
-    margin-right: 250px;   
+    margin-left: 500px;
+    margin-right: 500px;   
   }
-  
+  /* Picture will enlarge once user hover over it */ 
   img:hover {
     box-shadow: 10 10 20px 20px red;
     width: 600px;
   } 
-
 /* Responsive layout - it will make the two unequal columns stack
 on top of eachother when the screen is becoming smaller instead of
 next to each other */
 
 @media screen and (max-width: 800px) {
-    .columns-content, .main-headings {   
+    .columns-content, .main-headings-content {   
       width: 100%;
       padding: 0;
     }
