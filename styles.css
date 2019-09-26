@@ -135,11 +135,11 @@ margin-left: 50px;
 justify-content: space-between;
 }
 /* Will make sure it flex and its bold*/
-.relevant-coursework{
+.relevant__coursework{
     font-weight: bold;
 }
 /* Change the bullets style to squares and indentation for relevant-courses class*/ 
-.relevant-coursework ul li{
+.relevant__coursework ul li{
   list-style: square;
   padding: 0.5%;
   margin-left: 50px;
