@@ -25,7 +25,7 @@ body{
     background-color: grey;
   }
 /* format the right-margin. */
-.right-margin{
+.right__margin{
     float:right;
     margin-top: -20px;
     margin-right: 50px;
@@ -34,14 +34,14 @@ body{
 	  font-size: 16px;
 }
 /* Will create 2 unequal columns that will also float*/
-.columns-content{
+.columns__content{
     float:left;
     width: 25%;
     margin-right: -150px;
     margin-left: -50px;
 }
 /* Formats the headings of the column. */ 
-.columns-content h1, h2{
+.columns__content h1, h2{
   margin-top: 80px;
   margin-bottom: 50px;
   text-align: left;
@@ -53,21 +53,22 @@ body{
   display: flex;
 }
 /* Formats the heading 2 of the column. */ 
-.columns-content h2{
+.columns__content h2{
   margin-top: 40px;
   width: 60%;
   display: flex;
   word-wrap: break-word;
 }
 /* format the boxes sides of the list */
-.screen-division ul {
+.screen__division ul {
   list-style-type: none;
   margin: 10;
   padding: 10px;
 }
 /* format the placement of the list */
-.screen-divison li {
+.screen__divison li {
   overflow-wrap: break-word;
+  word-wrap: break-word;
   padding: 10px;
   margin-bottom: 10px;
   background-color: #9c9e9e;
@@ -79,17 +80,17 @@ body{
   display:flex;
 }
 /* It will highlight the box where the cursor will be */
-.screen-divison li:hover {
+.screen__divison li:hover {
   background-color:rgb(10, 10, 10);
 }
 /* It will clear floats after the columns */ 
-.screen-division:after{
+.screen__division:after{
     content: "";
     display: table;
     clear: both;  
 }
   /* sets the left margin of the page. */ 
-  .left-margin{
+  .left__margin{
     float:left;
     margin-right: -100px;
     margin-left: 40px;
@@ -97,14 +98,14 @@ body{
     font-size: 16px;
 }
 /* format the headings. */
-.main-headings-content{
+.main__headings--content{
   float:left;
   width:60%;
   padding: 20px;
   margin-top: 90px;
 }
 /* creates the outline of the. */ 
-.main-headings-content h1{
+.main__headings--content h1{
     display:flex;
     border: 2px solid black;
     background-color: rgb(168, 164, 164);
@@ -122,7 +123,7 @@ body{
   font-weight: bold;
 }
 /* Put the space between two */
-.job-title { 
+.job__title { 
   display: flex;
   justify-content: space-between;
   font-weight: bold;
@@ -165,7 +166,7 @@ on top of eachother when the screen is becoming smaller instead of
 next to each other */
 
 @media screen and (max-width: 800px) {
-    .columns-content, .main-headings-content {   
+    .columns__content, .main__headings--content {   
       width: 100%;
       padding: 0;
     }
