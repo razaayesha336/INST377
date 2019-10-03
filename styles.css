@@ -1,47 +1,48 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-body{
-    background-color: #f1f3f3;
-    font-family: Georgia;
-    color:black;
-    height: 50px;
+body {
+  background-color: #f1f3f3;
+  font-family: Georgia;
+  color: black;
+  height: 50px;
 }
 /* Top-level header style */
 #top__level--header {
-    float:middle;
-    margin-left: 40px;
-    margin-right: 50px;
+  float: middle;
+  margin-left: 40px;
+  margin-right: 50px;
   font-size: 50px;
   background-color: black;
-    color: #ffffff;
-    text-align:center;
-  } 
-  /* Creats a hroizontal line */
-  hr{
-    border: 5;
-    width: 100%;
-    height: 10px;
-    background-color: grey;
-  }
+  color: #ffffff;
+  text-align: center;
+}
+/* Creats a hroizontal line */
+hr {
+  border: 5;
+  width: 100%;
+  height: 10px;
+  background-color: grey;
+}
 /* format the right-margin. */
-.right__margin{
-    float:right;
-    margin-top: -20px;
-    margin-right: 50px;
-    margin-left: 10px;
-	  padding-bottom: 1px;
-	  font-size: 16px;
+.right__margin {
+  float: right;
+  margin-top: -20px;
+  margin-right: 50px;
+  margin-left: 10px;
+  padding-bottom: 1px;
+  font-size: 16px;
 }
 /* Will create 2 unequal columns that will also float*/
-.columns__content{
-    float:left;
-    width: 25%;
-    margin-right: -150px;
-    margin-left: -50px;
+.columns__content {
+  float: left;
+  width: 25%;
+  margin-right: -150px;
+  margin-left: -50px;
 }
-/* Formats the headings of the column. */ 
-.columns__content h1, h2{
+/* Formats the headings of the column. */
+.columns__content h1,
+h2 {
   margin-top: 80px;
   margin-bottom: 50px;
   text-align: left;
@@ -52,8 +53,8 @@ body{
   font-size: 20px;
   display: flex;
 }
-/* Formats the heading 2 of the column. */ 
-.columns__content h2{
+/* Formats the heading 2 of the column. */
+.columns__content h2 {
   margin-top: 40px;
   width: 60%;
   display: flex;
@@ -77,38 +78,38 @@ body{
   margin-left: 15px;
   padding-bottom: 10px;
   width: 30%;
-  display:flex;
+  display: flex;
 }
 /* It will highlight the box where the cursor will be */
 .screen__divison li:hover {
-  background-color:rgb(10, 10, 10);
+  background-color: rgb(10, 10, 10);
 }
-/* It will clear floats after the columns */ 
-.screen__division:after{
-    content: "";
-    display: table;
-    clear: both;  
+/* It will clear floats after the columns */
+.screen__division:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-  /* sets the left margin of the page. */ 
-  .left__margin{
-    float:left;
-    margin-right: -100px;
-    margin-left: 40px;
-    padding-bottom: 10px;
-    font-size: 16px;
+/* sets the left margin of the page. */
+.left__margin {
+  float: left;
+  margin-right: -100px;
+  margin-left: 40px;
+  padding-bottom: 10px;
+  font-size: 16px;
 }
 /* format the headings. */
-.main__headings--content{
-  float:left;
-  width:60%;
+.main__headings--content {
+  float: left;
+  width: 60%;
   padding: 20px;
   margin-top: 90px;
 }
-/* creates the outline of the. */ 
-.main__headings--content h1{
-    display:flex;
-    border: 2px solid black;
-    background-color: rgb(168, 164, 164);
+/* creates the outline of the. */
+.main__headings--content h1 {
+  display: flex;
+  border: 2px solid black;
+  background-color: rgb(168, 164, 164);
 }
 /* Put the space between two */
 .degree {
@@ -117,30 +118,30 @@ body{
   font-weight: bold;
 }
 /* Put the space between two */
-.reward{
+.reward {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
 }
 /* Put the space between two */
-.job__title { 
+.job__title {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
 }
-/* Change the bullets style to squares and indentation for experience class*/ 
-.experience ul li{
-list-style: square;
-padding: 0.5%;
-margin-left: 50px;
-justify-content: space-between;
+/* Change the bullets style to squares and indentation for experience class*/
+.experience ul li {
+  list-style: square;
+  padding: 0.5%;
+  margin-left: 50px;
+  justify-content: space-between;
 }
 /* Will make sure it flex and its bold*/
-.relevant__coursework{
-    font-weight: bold;
+.relevant__coursework {
+  font-weight: bold;
 }
-/* Change the bullets style to squares and indentation for relevant-courses class*/ 
-.relevant__coursework ul li{
+/* Change the bullets style to squares and indentation for relevant-courses class*/
+.relevant__coursework ul li {
   list-style: square;
   padding: 0.5%;
   margin-left: 50px;
@@ -148,39 +149,30 @@ justify-content: space-between;
   font-weight: normal;
 }
 /* Change the size and placement of the image*/
-.image img{
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 300px;
-    margin-left: 500px;
-    margin-right: 500px;   
-  }
-  /* Picture will enlarge once user hover over it */ 
-  .image img:hover {
-    box-shadow: 10 10 20px 20px red;
-    width: 600px;
-  } 
+.image img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+/* Picture will enlarge once user hover over it */
+.image img:hover {
+  box-shadow: 10 10 20px 20px red;
+  width: 600px;
+  margin-left: 500px;
+  margin-right: 500px;
+}
 /* Responsive layout - it will make the two unequal columns stack
 on top of eachother when the screen is becoming smaller instead of
 next to each other */
 
 @media screen and (max-width: 800px) {
-    .columns__content, .main__headings--content {   
-      width: 100%;
-      padding: 0;
-    }
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
+  .columns__content,
+  .main__headings--content {
+    width: 100%;
+    padding: 0;
+  }
+}
