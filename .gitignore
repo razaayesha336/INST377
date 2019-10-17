@@ -1,0 +1,18 @@
+.sass-cache/
+*.css.map
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V1oo
+.Trashes
+ehtumbs.db
+Thumbs.db
+
+# Logs and databases
+logs
+*.logs
+npm-debug.log
+
+bower_components
+node_modules
