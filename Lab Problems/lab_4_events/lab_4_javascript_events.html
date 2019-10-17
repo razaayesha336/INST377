@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lab 4 Javascript Events</title>
+  <style>
+    .head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      margin-bottom: 25px;
+    }
+
+    .head a,
+    .head h1 {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .textbox {
+      height: 100px;
+      width: 350px;
+      margin-bottom: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .first {
+      background: teal;
+    }
+
+    .second {
+      background: lightblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="head">
+    <h1>Sample Header</h1>
+    <a href="#">anchor tag to nowhere</a>
+  </div>
+  <div class="container">
+    <div class="first textbox">
+      <button onclick="alertMe(16)">What is 16C in F?</button>
+    </div>
+    <div class="second textbox">
+      <p>
+        World #2
+      </p>
+    </div>
+  </div>
+  <script>
+    function toFahrenheit(celsius) {
+      return (celsius * (9 / 5)) + 32;
+    }
+
+    function alertMe(display) {
+      alert(toFahrenheit(display));
+    }
+
+
+    let element = document.getElementsByClassName("first")[0]
+    const string = "click me I'm great";
+
+    element.innerHTML = string;
+
+    element.addEventListener('click', function(e) {
+      if (element.innerHTML !== string) {
+        element.innerHTML = string;
+      } else {
+        element.innerHTML = '';
+      }
+    });
+
+  </script>
+</body>
+
+</html>

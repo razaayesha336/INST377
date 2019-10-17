@@ -1,0 +1,6 @@
+1. Replace the ul with an ol
+--- you can do this by hand in the HTML, or by using element.innerHTML on .content
+
+2. sessionStorage.setItem('countries_arr', JSON.stringify(countries));
+
+ToDO: rewrite Question 6 # 6 with description of HTML list

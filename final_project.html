@@ -1,0 +1,254 @@
+<p>Through the group project in the INST 377 class, students are expected to design and build a web application that
+  runs on a real server (VCL, AWS, etc). Particularly, technology, design AND management in the group project need to be
+  justified well in your presentations and documentations, since communicating technology with both developers and
+  non-technical people is a very important qualification in the real-world as well as in academia. Evaluation criteria
+  and directions are presented below.</p>
+
+<h3 id="finalapplicationfolderstructure">Final Application Folder Structure</h3>
+
+<pre><code>/docs
+/src
+-- /static
+---- images, etc. for development
+-- /css
+-- /js
+-- index.html
+-- development files
+/build
+-- index.html
+-- any built files
+-- /css
+-- /static
+-- /js
+---- images, files that don't change, etc.
+.eslintrc.json
+.gitignore
+package.json
+README.md
+... etc.
+</code></pre>
+
+<h2 id="finalreports">Final Reports</h2>
+
+<p>Each team is expected to submit:</p>
+
+<ol>
+  <li>
+    <p>User Manual (docs/user.md)</p>
+
+    <ul>
+      <li>This document should be used to explain the application and its use to your identified stakeholders.</li>
+
+      <li>It explains how they should use the system.</li>
+
+      <li>It should be written in clear, plain, non-technical language.</li>
+    </ul>
+  </li>
+
+  <li>
+    <p>README (top part of your README.md)</p>
+
+    <ul>
+      <li>Title of your project</li>
+
+      <li>Description of your project</li>
+
+      <li>Link to the Heroku, Netlify, or Digital Ocean instance where your application can be used</li>
+
+      <li>Description of target browsers (iOS? Android? Which ones?)</li>
+
+      <li>Link to User Manual </li>
+
+      <li>Link to Developer Manual</li>
+    </ul>
+  </li>
+
+  <li>
+    <p>Developer Manual (bottom half of your README.md)</p>
+
+    <ul>
+      <li>The audience of this document is future developers who will take over your system.</li>
+
+      <li>They know technical terms and have general knowledge about web applications, but do not have knowledge about
+        your system design.</li>
+
+      <li>You need to provide a technical document so that future developers can start setting up the application on
+        their local machines, and keep working on the system development after you leave the team.</li>
+
+      <li>Your Developer Manual covers:
+
+
+        <ul>
+          <li>How to install your application and all dependencies</li>
+
+          <li>How to run your application on a server</li>
+
+          <li>How to run any tests you have written for your software</li>
+
+          <li>The API for your server application - all GET, POST, PATCH, etc endpoints, and what they each do</li>
+
+          <li>A clear set of expectations around known bugs and a road-map for future development.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    Final Report (docs/final.md)
+      This rest of the document is a brief description of your final presentation.</p>
+
+    <p>
+      <ul>
+        <li>Title </li>
+    </p>
+
+    <p>
+  <li>Team members</li>
+  </p>
+
+  <p>
+    <li>Link to where your app is running</li>
+  </p>
+
+  <p>
+    <li>Information problem you're trying to solve</li>
+  </p>
+
+  <p>
+    <li>Identified stakeholders/target browsers</li>
+  </p>
+
+  <p>
+    <li>Data you chose to work with</li>
+  </p>
+
+  <p>
+    <li>Chosen strategies and solutions for the problem</li>
+  </p>
+
+  <p>
+    <li>Technical system decision rationale</li>
+  </p>
+
+  <p>
+    <li>How/if your final system helps to address the problem</li>
+  </p>
+
+  <p>
+    <li>Challenges faced and impact on final design</li>
+  </p>
+
+  <p>
+    <li>Possible future work directions with this problem</li>
+    </ul>
+  </p>
+  </li>
+</ol>
+
+<ul>
+  <li>Documentation needs to be written in Markdown (MD) files, nicely formatted</li>
+
+  <li>Documentation should be included to each team’s final code submission.</li>
+
+  <li>Documentation should be saved in your main project directory under "docs"</li>
+
+  <li>Docs should be submitted as either fully-styled HTML &amp; CSS or a PDF file</li>
+</ul>
+
+<h3 id="minimumcodeguidelines">Minimum Code Guidelines</h3>
+
+<h4 id="frontend40">Front End - 40%</h4>
+
+<ul>
+  <li>Front end displays correctly in at least two devices from a single code base</li>
+
+  <li>Front end accesses data fully through AJAX data loads</li>
+
+  <li>Front end is styled using contemporary CSS, including appropriate use of flexbox or grids</li>
+
+  <li>Front end styles appear similar on all contemporary desktop browsers</li>
+
+  <li>Minimum 3 application pages:</li>
+</ul>
+
+<ol>
+  <li>Index, where we can access your app</li>
+
+  <li>About, describing the project</li>
+
+  <li>Documentation for developers looking to work with the project</li>
+</ol>
+
+<h4 id="backend40">Back End - 40%</h4>
+
+<ul>
+  <li>Successful connection to external data source</li>
+
+  <li>All application token secrets installed properly</li>
+
+  <li>Installed on a SaaS portal - Heroku, Netlify, Digital Ocean, etc.</li>
+
+  <li>3 API end-points you have authored, which:
+
+
+    <ul>
+      <li>Get data from an outside source</li>
+
+      <li>Transform it to help solve your information problem</li>
+
+      <li>Pass it to the front end</li>
+    </ul>
+  </li>
+
+  <li>A GET endpoint, a POST endpoint, and a PUT endpoint</li>
+
+  <li>End points can be accessed from and supply data to the front end</li>
+
+  <li><strong>Extra credit</strong>: Make your own local database that can store POST information</li>
+
+  <li><strong>Extra credit</strong>: Use GraphQL and Apollo to write a GraphQl access grammar</li>
+</ul>
+
+<h4 id="userexperiencedesign20">User Experience Design - 20%</h4>
+
+<ul>
+  <li>Application uses a contemporary color scheme in an effective way
+
+
+    <ul>
+      <li>Tool: <a href="https://color.adobe.com/create">Kuler by Adobe</a></li>
+    </ul>
+  </li>
+
+  <li>Application uses a coherent approach to font selection and sizing</li>
+
+  <li>Application makes good use of responsive web design principals</li>
+
+  <li>Application loads data at appropriate times to not block client experience</li>
+
+  <li>Application loads appropriate amount of information/images/etc for platform</li>
+
+  <li>Application works smoothly on 3 bars of service, no WiFi</li>
+</ul>
+
+<h3 id="extracredit">Extra Credit</h3>
+
+<p>There are several opportunities for extra credit on this project:</p>
+
+<ul>
+  <li>Use React for your front-end, and design it to update dynamically</li>
+
+  <li>Use advanced CSS animations for all your motion on the front end
+
+
+    <ul>
+      <li>Button clicks, swipes, screen transitions</li>
+    </ul>
+  </li>
+
+  <li>Use a design grammar such as Material or iOS to establish a coherent design voice</li>
+
+  <li>Choose fonts and colors that compliment one another to make a strong user experience</li>
+
+  <li>Application stores local data properly to be useful without wifi</li>
+</ul>

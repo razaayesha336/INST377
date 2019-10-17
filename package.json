@@ -1,0 +1,25 @@
+{
+  "name": "INST377",
+  "version": "1.0.0",
+  "description": "Class exercises for INST-377 Fall 2019",
+  "main": "sample_bookmarklet.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleitch1/INST377.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aleitch1/INST377/issues"
+  },
+  "homepage": "https://github.com/aleitch1/INST377#readme",
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
