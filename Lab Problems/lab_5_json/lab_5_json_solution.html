@@ -1,3 +1,49 @@
+for (let i = 0; i < 50; i++) {
+  const selectNumber = getRandomIntInclusive(0, 242);
+  let element = document.createElement("li");
+  element.innerText = nameArray[selectNumber];
+
+  instructions.appendChild(element);
+};
+
+//The maximum is inclusive and the minimum is inclusive 
+
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
+
+
+
+<!--
+      const instructions = document.querySelector('.instructions');
+      instructions.innerHTML = '';
+
+      for (let i = 0; i < 50; i++) {
+        const selectNumber = getRandomIntInclusive(0, 242);
+        let element = document.createElement("li");
+        element.innerText = nameArray[selectNumber];
+
+        instructions.appendChild(element);
+      };
+
+      //The maximum is inclusive and the minimum is inclusive 
+
+      function getRandomIntInclusive(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+    
+       -->
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
